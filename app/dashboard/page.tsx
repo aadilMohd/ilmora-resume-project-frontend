@@ -33,7 +33,7 @@ export default function Dashboard() {
     formData.append("mode", "gemini"); 
 
     try {
-      const response = await fetch(" Available at your primary URL https://ilmora-resume-api.onrender.com/api/v1/analyze", {
+      const response = await fetch("https://ilmora-resume-api.onrender.com/api/v1/analyze", {
         method: "POST",
         headers: { "Authorization": `Bearer ${localStorage.getItem('token')}` },
         body: formData,
